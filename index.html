@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xtreme Support Bot</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #0f172a, #1e293b, #334155);
+            overflow: hidden;
+            position: relative;
+        }
+        /* ব্যাকগ্রাউন্ডের গ্লাসি অরবিটস */
+        body::before, body::after {
+            content: '';
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #00f2fe, #4facfe);
+            z-index: 1;
+            animation: float 6s ease-in-out infinite;
+        }
+        body::before { top: 10%; left: 15%; }
+        body::after { bottom: 10%; right: 15%; background: linear-gradient(45deg, #f355da, #7000ff); animation-delay: -3s; }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        /* প্রিমিয়াম গ্লাস মরফিজম কার্ড */
+        .glass-card {
+            position: relative;
+            z-index: 2;
+            width: 90%;
+            max-width: 400px;
+            padding: 40px 30px;
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+            text-align: center;
+            color: #ffffff;
+        }
+        h1 {
+            font-size: 26px;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+            background: linear-gradient(45deg, #00f2fe, #f355da);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        p {
+            font-size: 14px;
+            color: #94a3b8;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+        .status-badge {
+            display: inline-block;
+            padding: 6px 18px;
+            background: rgba(34, 197, 94, 0.15);
+            border: 1px solid rgba(34, 197, 94, 0.4);
+            color: #4ade80;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 35px;
+        }
+        .btn-telegram {
+            display: inline-block;
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(45deg, #0088cc, #00a2ff);
+            color: white;
+            text-decoration: none;
+            border-radius: 14px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 136, 204, 0.3);
+        }
+        .btn-telegram:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 136, 204, 0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="glass-card">
+        <h1>Xtreme Support Bot</h1>
+        <p>The premium automated support bot with flexible custom option system.</p>
+        <span class="status-badge">● Server Active</span>
+        <a href="https://t.me/xtreme_support_bot" target="_blank" class="btn-telegram">Launch Bot</a>
+    </div>
+
+</body>
+</html>
